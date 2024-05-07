@@ -15,6 +15,14 @@
 		B2D606C42BEABB3700372926 /* MainViewController + ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606C32BEABB3700372926 /* MainViewController + ConfigurationView.swift */; };
 		B2D606C62BEABBB100372926 /* MainViewController + DelegateTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606C52BEABBB100372926 /* MainViewController + DelegateTableView.swift */; };
 		B2D606C82BEABD0100372926 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606C72BEABD0100372926 /* MainViewModel.swift */; };
+		B2D606CB2BEACB3900372926 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606CA2BEACB3900372926 /* EndPoint.swift */; };
+		B2D606CD2BEACCBF00372926 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606CC2BEACCBF00372926 /* Users.swift */; };
+		B2D606CF2BEACDEC00372926 /* Adress.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606CE2BEACDEC00372926 /* Adress.swift */; };
+		B2D606D22BEACE4700372926 /* URLSession + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606D12BEACE4700372926 /* URLSession + Extensions.swift */; };
+		B2D606D42BEAD0E700372926 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606D32BEAD0E700372926 /* NetworkError.swift */; };
+		B2D606D62BEAD11C00372926 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606D52BEAD11C00372926 /* NetworkRequest.swift */; };
+		B2D606D82BEAD2A600372926 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606D72BEAD2A600372926 /* NetworkDataFetch.swift */; };
+		B2D606DB2BEAD72D00372926 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606DA2BEAD72D00372926 /* Observable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +36,14 @@
 		B2D606C32BEABB3700372926 /* MainViewController + ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController + ConfigurationView.swift"; sourceTree = "<group>"; };
 		B2D606C52BEABBB100372926 /* MainViewController + DelegateTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController + DelegateTableView.swift"; sourceTree = "<group>"; };
 		B2D606C72BEABD0100372926 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		B2D606CA2BEACB3900372926 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		B2D606CC2BEACCBF00372926 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		B2D606CE2BEACDEC00372926 /* Adress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Adress.swift; sourceTree = "<group>"; };
+		B2D606D12BEACE4700372926 /* URLSession + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession + Extensions.swift"; sourceTree = "<group>"; };
+		B2D606D32BEAD0E700372926 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		B2D606D52BEAD11C00372926 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		B2D606D72BEAD2A600372926 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
+		B2D606DA2BEAD72D00372926 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +80,9 @@
 				B2D606C12BEAB8E100372926 /* View */,
 				B2D606C22BEAB8EB00372926 /* ViewModel */,
 				B2D606BE2BEAB80500372926 /* Application */,
+				B2D606C92BEACB2800372926 /* Network */,
+				B2D606D92BEAD71500372926 /* Helpers */,
+				B2D606D02BEACE3400372926 /* Extensions */,
 				B2D606BF2BEAB8AB00372926 /* SupportingFiles */,
 			);
 			path = MVVMProjectApp;
@@ -91,6 +110,8 @@
 		B2D606C02BEAB8D900372926 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				B2D606CC2BEACCBF00372926 /* Users.swift */,
+				B2D606CE2BEACDEC00372926 /* Adress.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -111,6 +132,33 @@
 				B2D606C72BEABD0100372926 /* MainViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B2D606C92BEACB2800372926 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B2D606CA2BEACB3900372926 /* EndPoint.swift */,
+				B2D606D32BEAD0E700372926 /* NetworkError.swift */,
+				B2D606D52BEAD11C00372926 /* NetworkRequest.swift */,
+				B2D606D72BEAD2A600372926 /* NetworkDataFetch.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B2D606D02BEACE3400372926 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2D606D12BEACE4700372926 /* URLSession + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B2D606D92BEAD71500372926 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B2D606DA2BEAD72D00372926 /* Observable.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,12 +231,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2D606CD2BEACCBF00372926 /* Users.swift in Sources */,
 				B2D606AF2BEA90BF00372926 /* MainViewController.swift in Sources */,
 				B2D606C62BEABBB100372926 /* MainViewController + DelegateTableView.swift in Sources */,
 				B2D606C42BEABB3700372926 /* MainViewController + ConfigurationView.swift in Sources */,
 				B2D606AB2BEA90BF00372926 /* AppDelegate.swift in Sources */,
 				B2D606AD2BEA90BF00372926 /* SceneDelegate.swift in Sources */,
+				B2D606D22BEACE4700372926 /* URLSession + Extensions.swift in Sources */,
+				B2D606D82BEAD2A600372926 /* NetworkDataFetch.swift in Sources */,
+				B2D606CB2BEACB3900372926 /* EndPoint.swift in Sources */,
 				B2D606C82BEABD0100372926 /* MainViewModel.swift in Sources */,
+				B2D606DB2BEAD72D00372926 /* Observable.swift in Sources */,
+				B2D606D42BEAD0E700372926 /* NetworkError.swift in Sources */,
+				B2D606D62BEAD11C00372926 /* NetworkRequest.swift in Sources */,
+				B2D606CF2BEACDEC00372926 /* Adress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

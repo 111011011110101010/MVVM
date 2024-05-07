@@ -3,6 +3,7 @@ import UIKit
 final class MainViewController: UIViewController {
     
     let viewModel = MainViewModel()
+    var cellDataSource: [Users] = []
     
     let baseBackground: UIImageView = {
         let baseBackground = UIImageView(image: UIImage(named: "mainSceneBackground"))
@@ -27,10 +28,23 @@ final class MainViewController: UIViewController {
         
         return tableView
     }()
+    
+    let activityIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView()
+        indicator.translatesAutoresizingMaskIntoConstraints = false
+        
+        return indicator
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         configurationView()
+        bindViewModel()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        viewModel.getUsers()
     }
 }
 
