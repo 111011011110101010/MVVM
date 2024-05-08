@@ -3,7 +3,7 @@ import UIKit
 final class MainViewController: UIViewController {
     
     let viewModel = MainViewModel()
-    var cellDataSource: [Users] = []
+    var cellDataSource: [MainCellViewModel] = []
     
     let baseBackground: UIImageView = {
         let baseBackground = UIImageView(image: UIImage(named: "mainSceneBackground"))
@@ -18,6 +18,7 @@ final class MainViewController: UIViewController {
         label.text = "Developed by Zaharchenko"
         label.textColor = .systemGray5.withAlphaComponent(0.85)
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 15, weight: .light)
         
         return label
     }()

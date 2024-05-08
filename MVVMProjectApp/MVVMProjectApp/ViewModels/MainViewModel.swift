@@ -4,7 +4,7 @@ final class MainViewModel {
     
     var isLoading: Observable<Bool> = Observable(false)
     var dataSource: [Users]?
-    var cellDataSource: Observable<[Users]> = Observable(nil)
+    var cellDataSource: Observable<[MainCellViewModel]> = Observable(nil)
     
     func getNumberOfSection() -> Int {
         return 1
@@ -28,6 +28,6 @@ final class MainViewModel {
     }
     
     func mapCellData() {
-        cellDataSource.value = dataSource
+        cellDataSource.value = dataSource?.compactMap({MainCellViewModel($0)})
     }
 }

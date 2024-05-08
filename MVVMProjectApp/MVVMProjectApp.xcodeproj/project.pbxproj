@@ -23,6 +23,11 @@
 		B2D606D62BEAD11C00372926 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606D52BEAD11C00372926 /* NetworkRequest.swift */; };
 		B2D606D82BEAD2A600372926 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606D72BEAD2A600372926 /* NetworkDataFetch.swift */; };
 		B2D606DB2BEAD72D00372926 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606DA2BEAD72D00372926 /* Observable.swift */; };
+		B2D606DD2BEBC01A00372926 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606DC2BEBC01A00372926 /* MainCell.swift */; };
+		B2D606DF2BEBC34700372926 /* MainCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606DE2BEBC34700372926 /* MainCellViewModel.swift */; };
+		B2D606E12BEBD26B00372926 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606E02BEBD26B00372926 /* DetailViewController.swift */; };
+		B2D606E32BEBD2BB00372926 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606E22BEBD2BB00372926 /* DetailViewModel.swift */; };
+		B2D606E52BEBD3B200372926 /* DetailViewController + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D606E42BEBD3B200372926 /* DetailViewController + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +49,11 @@
 		B2D606D52BEAD11C00372926 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		B2D606D72BEAD2A600372926 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
 		B2D606DA2BEAD72D00372926 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		B2D606DC2BEBC01A00372926 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		B2D606DE2BEBC34700372926 /* MainCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCellViewModel.swift; sourceTree = "<group>"; };
+		B2D606E02BEBD26B00372926 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B2D606E22BEBD2BB00372926 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		B2D606E42BEBD3B200372926 /* DetailViewController + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailViewController + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +88,7 @@
 			children = (
 				B2D606C02BEAB8D900372926 /* Model */,
 				B2D606C12BEAB8E100372926 /* View */,
-				B2D606C22BEAB8EB00372926 /* ViewModel */,
+				B2D606C22BEAB8EB00372926 /* ViewModels */,
 				B2D606BE2BEAB80500372926 /* Application */,
 				B2D606C92BEACB2800372926 /* Network */,
 				B2D606D92BEAD71500372926 /* Helpers */,
@@ -122,16 +132,21 @@
 				B2D606AE2BEA90BF00372926 /* MainViewController.swift */,
 				B2D606C32BEABB3700372926 /* MainViewController + ConfigurationView.swift */,
 				B2D606C52BEABBB100372926 /* MainViewController + DelegateTableView.swift */,
+				B2D606DC2BEBC01A00372926 /* MainCell.swift */,
+				B2D606E02BEBD26B00372926 /* DetailViewController.swift */,
+				B2D606E42BEBD3B200372926 /* DetailViewController + Extension.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		B2D606C22BEAB8EB00372926 /* ViewModel */ = {
+		B2D606C22BEAB8EB00372926 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 				B2D606C72BEABD0100372926 /* MainViewModel.swift */,
+				B2D606DE2BEBC34700372926 /* MainCellViewModel.swift */,
+				B2D606E22BEBD2BB00372926 /* DetailViewModel.swift */,
 			);
-			path = ViewModel;
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		B2D606C92BEACB2800372926 /* Network */ = {
@@ -232,8 +247,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2D606CD2BEACCBF00372926 /* Users.swift in Sources */,
+				B2D606E12BEBD26B00372926 /* DetailViewController.swift in Sources */,
+				B2D606E52BEBD3B200372926 /* DetailViewController + Extension.swift in Sources */,
 				B2D606AF2BEA90BF00372926 /* MainViewController.swift in Sources */,
 				B2D606C62BEABBB100372926 /* MainViewController + DelegateTableView.swift in Sources */,
+				B2D606DF2BEBC34700372926 /* MainCellViewModel.swift in Sources */,
 				B2D606C42BEABB3700372926 /* MainViewController + ConfigurationView.swift in Sources */,
 				B2D606AB2BEA90BF00372926 /* AppDelegate.swift in Sources */,
 				B2D606AD2BEA90BF00372926 /* SceneDelegate.swift in Sources */,
@@ -242,9 +260,11 @@
 				B2D606CB2BEACB3900372926 /* EndPoint.swift in Sources */,
 				B2D606C82BEABD0100372926 /* MainViewModel.swift in Sources */,
 				B2D606DB2BEAD72D00372926 /* Observable.swift in Sources */,
+				B2D606E32BEBD2BB00372926 /* DetailViewModel.swift in Sources */,
 				B2D606D42BEAD0E700372926 /* NetworkError.swift in Sources */,
 				B2D606D62BEAD11C00372926 /* NetworkRequest.swift in Sources */,
 				B2D606CF2BEACDEC00372926 /* Adress.swift in Sources */,
+				B2D606DD2BEBC01A00372926 /* MainCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
